@@ -826,6 +826,7 @@ img, textarea, input, table {
                 line-height: normal;
                 text-transform: uppercase;
                 background: #ED565D;
+                z-index: 10;
             }
 
             .name {
@@ -885,11 +886,14 @@ img, textarea, input, table {
 
         .inner {
             gap: 16px;
-            flex-wrap:wrap;
 
             .item {
-                flex: none;
-                width: 100%;
+                flex: 0 0 calc(50% - 8px);
+
+                .name {
+                    font-size: 12px;
+                    padding: 10px 10px;
+                }
             }
         }
     }
@@ -937,11 +941,11 @@ img, textarea, input, table {
                 }
 
                 .kod {
-                    flex: 0 0 41px;
+                    flex: 0 0 44px;
                     margin-right: 2px;
 
                     input {
-                        width: 41px;
+                        width: 44px;
                     }
                 }
             }
@@ -1157,6 +1161,7 @@ img, textarea, input, table {
             font-weight: 700;
             line-height: normal;
             text-transform: uppercase;
+            z-index: 10;
         }
 
         img {
@@ -1746,7 +1751,7 @@ img, textarea, input, table {
                     display: flex;
                     position: relative;
 
-                    .label_prod {
+                    .label {
                         position: absolute;
                         top: 15px;
                         left: 0;
@@ -1760,6 +1765,7 @@ img, textarea, input, table {
                         text-transform: uppercase;
                         padding: 6px;
                         background: #ED565D;
+                        z-index: 10;
                     }
 
                     .swiper {
